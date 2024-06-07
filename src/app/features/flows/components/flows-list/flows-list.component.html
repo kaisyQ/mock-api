@@ -1,5 +1,14 @@
 <div class="flow-list">
-    <app-flows-item></app-flows-item>
-    <app-flows-item></app-flows-item>
-    <app-flows-item></app-flows-item>
+
+    @for (flow of flows; track flow.id) {
+        <app-flows-item
+            [id]="flow.id"
+            [name]="flow.name"
+            [description]="flow.description"
+            [groupName]="flow.groupName"
+            [createdAt]="flow.createdAt"
+        ></app-flows-item>
+    } @empty {
+        Empty list of flow
+    }
 </div>
