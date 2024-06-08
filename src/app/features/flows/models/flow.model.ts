@@ -37,7 +37,6 @@ export class FlowModel {
         this._description = value;
     }
 
-
     public get description(): string {
         return this._description;
     }
