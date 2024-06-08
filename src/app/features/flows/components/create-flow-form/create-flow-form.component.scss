@@ -1,0 +1,14 @@
+.form {
+    
+    margin: 30px auto 0 auto;
+    padding: 30px;
+    max-width: 878px;
+    width: 100%;
+    
+    .form-row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
